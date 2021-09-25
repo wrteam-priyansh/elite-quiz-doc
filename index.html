@@ -91,7 +91,7 @@
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeDefaultProfileImages">How to change default profile images</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeJsonAnimations">How to change json animations</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToConfigureInAppPurchase">How to configure in-app purchase</a></li>         
-                                <li class="nav-item"><a class="nav-link" href="#howToConfigureInAppPurchase">How to configure in-app purchase</a></li>         
+                                <li class="nav-item"><a class="nav-link" href="#howToEnableMessageInBattle">How to enable message feature in battle (1 vs 1)</a></li>         
                                 <li class="nav-item"><a class="nav-link" href="#howToAppConstants">How to change application constants</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToGenerateReleaseApk">How to generate release apks</a></li>         
 
@@ -634,12 +634,43 @@
                                     </li>  
 
                                 </ol>
-                                    
-                                   
-                                
                                 <hr> 
                             </section>
+                                     
                             
+                            <section id="howToEnableMessageInBattle">
+                                <h4>How to enable message feature in battle (1 vs 1)</h4>
+                                <ol>    
+                                    <li>
+                                        Go to firebase project, firestore database -> indexes and create composite query index as shown in below images.
+                                        <br>
+                                        <img src="images/app/battle-message-1.png" alt="Elite Quiz" />
+                                        <img src="images/app/battle-message-2.png" alt="Elite Quiz" />
+                                        <img src="images/app/battle-message-3.png" alt="Elite Quiz" />
+                                    </li> 
+                                    <li>
+                                        Go to lib/utils/constants.dart and add predefined messages as per your desire.
+
+                                        <br>
+                                        <img src="images/app/battle-message-4.png" alt="Elite Quiz" />
+                                    </li> 
+
+                                    <li>
+                                        If you want to update emojis then follow these steps.
+                                        Go to assets/images/emojis/ and add new emoji.
+                                        File format of emoji must be svg.
+                                        
+                                        <img src="images/app/battle-message-5.png" alt="Elite Quiz" />
+                                    </li> 
+
+                                    <li>
+                                        Add file name of newly added emoji in assets/files/emojis.json file.
+                                        <img src="images/app/battle-message-6.png" alt="Elite Quiz" />
+                                    </li> 
+                                    
+                                </ol>
+                                <hr> 
+                            </section>
 
 
                             <section id="howToAppConstants">
