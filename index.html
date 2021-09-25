@@ -90,8 +90,10 @@
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeIntroSlideImages">How to change intro slider images</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeDefaultProfileImages">How to change default profile images</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeJsonAnimations">How to change json animations</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#howToConfigureInAppPurchase">How to configure in-app purchase</a></li>         
                                 <li class="nav-item"><a class="nav-link" href="#howToAppConstants">How to change application constants</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToGenerateReleaseApk">How to generate release apks</a></li>         
+
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
@@ -582,6 +584,33 @@
                                 </ol>
                                 <hr> 
                             </section>
+
+                            <section id="howToConfigureInAppPurchase">
+                                <h4>How to configure in-app purchase</h4>
+                                <ol>    
+                                    <li>Configure in-app purchase for android applicaiton.
+                                        Upload your application in playstore and create in-app products for your applicaiton as shown in below image.
+                                        Id of in-app products (consumable product) in apple and play store must be same. 
+                                        <img src="images/app/in-app-purchase-1.png" alt="Elite Quiz" />
+                                    </li>  
+                                    <li>Configure in-app purchase for ios applicaiton.
+                                        Upload your application in apple store and create in-app products for your applicaiton as shown in below image.
+                                        Id of in-app products (consumable product) in apple and play store must be same. 
+                                        <img src="images/app/in-app-purchase-1.png" alt="Elite Quiz" />
+                                    </li>
+                                    <li>
+                                        Go to lib/utils/inAppPurchaseProducts.dart. 
+                                        Enter coins and in-app product's id (created previously) respective to coin as shown in image.
+                                        <img src="images/app/in-app-purchase-3.png" alt="Elite Quiz" />
+                                    </li>  
+
+                                </ol>
+                                    
+                                   
+                                
+                                <hr> 
+                            </section>
+                            
 
 
                             <section id="howToAppConstants">
