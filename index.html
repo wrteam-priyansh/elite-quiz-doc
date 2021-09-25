@@ -91,6 +91,7 @@
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeDefaultProfileImages">How to change default profile images</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeJsonAnimations">How to change json animations</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToConfigureInAppPurchase">How to configure in-app purchase</a></li>         
+                                <li class="nav-item"><a class="nav-link" href="#howToConfigureInAppPurchase">How to configure in-app purchase</a></li>         
                                 <li class="nav-item"><a class="nav-link" href="#howToAppConstants">How to change application constants</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToGenerateReleaseApk">How to generate release apks</a></li>         
 
@@ -441,8 +442,27 @@
 
 
                             <section id="howToChangeAdIds">
-                                <h4>How to change ad ids</h4>
-                                <ol>    
+                                <h4>How to configure google ads</h4>
+                                <ol>
+                                   
+                                    <li>
+                                        Go to android/app/src/main/AndroidManifest.xml and enter android app id as shown in below image 
+                                       <br>
+                                        Find app id of your app as mention here  
+                                        https://support.google.com/admob/answer/7356431?hl=en   
+
+                                        <img src="images/app/google-ads-1.png" alt="Elite Quiz" />
+                                        </li>
+
+                                        <li>
+                                            Go to ios/Runner/Info.plist and enter ios app id as shown in below image 
+                                           <br>
+                                            Find app id of your app as mention here  
+                                            https://support.google.com/admob/answer/7356431?hl=en   
+    
+                                            <img src="images/app/google-ads-2.png" alt="Elite Quiz" />
+                                            </li>    
+                                    
                                     <li>
                                         Go to lib/utils/constants.dart and update ad ids as shown in below image
                                         <img src="images/app/changeAdIds.jpg" alt="Elite Quiz" />
@@ -594,9 +614,18 @@
                                         <img src="images/app/in-app-purchase-1.png" alt="Elite Quiz" />
                                     </li>  
                                     <li>Configure in-app purchase for ios applicaiton.
-                                        Upload your application in apple store and create in-app products for your applicaiton as shown in below image.
+                                        Add capibility in your project using xcode as show in below image.
+
+                                        <img src="images/app/in-app-purchase-2.png" alt="Elite Quiz" />
+                                        <br><br>
+                                        Follow this links in order to enable in-purchase.<br>
+                                        https://help.apple.com/app-store-connect/#/devae49fb316.<br>
+                                         https://help.apple.com/app-store-connect/#/devb57be10e7.
+                                         <br>
+                                        For more help visit this https://developer.apple.com/in-app-purchase/. 
+                                        <br>
                                         Id of in-app products (consumable product) in apple and play store must be same. 
-                                        <img src="images/app/in-app-purchase-1.png" alt="Elite Quiz" />
+
                                     </li>
                                     <li>
                                         Go to lib/utils/inAppPurchaseProducts.dart. 
