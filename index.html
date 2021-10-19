@@ -91,7 +91,8 @@
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeDefaultProfileImages">How to change default profile images</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeJsonAnimations">How to change json animations</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToConfigureInAppPurchase">How to configure in-app purchase</a></li>         
-                                <li class="nav-item"><a class="nav-link" href="#howToEnableMessageInBattle">How to enable message feature in battle (1 vs 1)</a></li>         
+                                <li class="nav-item"><a class="nav-link" href="#howToEnableMessageInBattle">How to enable message feature in battle</a></li>         
+                                <li class="nav-item"><a class="nav-link" href="#howToConfigureForceUpdate">How to configure force update</a></li>         
                                 <li class="nav-item"><a class="nav-link" href="#howToAppConstants">How to change application constants</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToGenerateReleaseApk">How to generate release apks</a></li>         
 
@@ -641,7 +642,7 @@
                                      
                             
                             <section id="howToEnableMessageInBattle">
-                                <h4>How to enable message feature in battle (1 vs 1)</h4>
+                                <h4>How to enable message feature in battle</h4>
                                 <ol>    
                                     <li>
                                         Go to firebase project, firestore database -> indexes and create composite query index as shown in below images.
@@ -668,6 +669,44 @@
                                     <li>
                                         Add file name of newly added emoji in assets/files/emojis.json file.
                                         <img src="images/app/battle-message-6.png" alt="Elite Quiz" />
+                                    </li> 
+                                    
+                                </ol>
+                                <hr> 
+                            </section>
+
+                            
+                            
+                            <section id="howToConfigureForceUpdate">
+                                <h4>How to configure force update</h4>
+                                <ol>    
+                                    <li>
+                                        Go to admin panel in settings -> system configurations and enable force update as shown in image.
+                                        <br>
+                                        <img src="images/app/force-update.png" alt="Elite Quiz" />
+                                    </li> 
+                                    <li>
+                                        Go to pubspec.yaml and copy the version number of application. 
+                                        
+
+                                        <br>
+                                        <img src="images/app/force-update-2.png" alt="Elite Quiz" />
+                                    </li> 
+
+                                    <li>
+                                        Go to admin panel in settings -> system configurations and enter the version number we just copied.
+                                        
+
+                                        <br>
+                                        <img src="images/app/force-update-3.png" alt="Elite Quiz" />
+                                    </li> 
+                                    <li>
+                                        Go to admin panel in settings -> system configurations and add application url(play and app store link).
+                                        Make sure to add correct url otherwise force update will not work as expected.
+                                        
+
+                                        <br>
+                                        <img src="images/app/force-update-4.png" alt="Elite Quiz" />
                                     </li> 
                                     
                                 </ol>
