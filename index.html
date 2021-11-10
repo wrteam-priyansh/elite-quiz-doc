@@ -82,7 +82,7 @@
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeAppName">How to change application name</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeAppVersion">How to change application version</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeDatabaseUrl">How to change database url and other backend settings</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#howToChangeAdIds">How to change ad ids</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#howToConfigureAds">How to configure ads</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToSetDefaultLanguage">How to set default language</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToAddLanguage">How to add new language</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToChangeAppColors">How to change application colors</a></li>
@@ -93,6 +93,8 @@
                                 <li class="nav-item"><a class="nav-link" href="#howToConfigureInAppPurchase">How to configure in-app purchase</a></li>         
                                 <li class="nav-item"><a class="nav-link" href="#howToEnableMessageInBattle">How to enable message feature in battle</a></li>         
                                 <li class="nav-item"><a class="nav-link" href="#howToConfigureForceUpdate">How to configure force update</a></li>         
+                                <li class="nav-item"><a class="nav-link" href="#manageBadges">Manage badges</a></li>         
+                                
                                 <li class="nav-item"><a class="nav-link" href="#howToAppConstants">How to change application constants</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToGenerateReleaseApk">How to generate release apks</a></li>         
 
@@ -444,11 +446,20 @@
                             </section>
 
 
-                            <section id="howToChangeAdIds">
+                            <section id="howToConfigureAds">
                                 <h4>How to configure google ads</h4>
                                 <ol>
-                                   
+                                   <li>
+                                        Enable ads from admin panel as show in below image.
+                                        <br>
+                                        If you do not want to add ads in app then skip the further steps
+                                        
+                                        
+                                        <img src="images/app/enable-ads.png" alt="Elite Quiz" />
+
+                                    </li>
                                     <li>
+                                        Set up google ads<br>
                                         Go to android/app/src/main/AndroidManifest.xml and enter android app id as shown in below image 
                                        <br>
                                         Find app id of your app as mention here  
@@ -467,9 +478,14 @@
                                             </li>    
                                     
                                     <li>
-                                        Go to lib/utils/constants.dart and update ad ids as shown in below image
-                                        <img src="images/app/changeAdIds.jpg" alt="Elite Quiz" />
-                                    </li> 
+                                        Go to settings/Ads.Settings in admin panel and add google ads id as shown in below image
+                                        <img src="images/app/add-googe-ad-ids.png" alt="Elite Quiz" />
+                                    </li>
+                                    
+                                    <li>
+                                        Go to settings/Ads.Settings in admin panel and add facebook ads placement id as shown in below image
+                                        <img src="images/app/add-fb-ad-ids.png" alt="Elite Quiz" />
+                                    </li>
                                 </ol>
                                 <hr> 
                             </section>
@@ -713,6 +729,28 @@
                                 <hr> 
                             </section>
 
+                            <section id="manageBadges">
+                                <h4>Manage Badges</h4>
+                                <ol>    
+                                    <li>
+                                        Manage badges from here
+                                        <img src="images/app/manage-badges.png" alt="Elite Quiz" />
+                                    </li> 
+                                     
+                                    <li>
+                                        To unlock badges like Super Sonic, Flashback and Brainiac minimum question is set to 5.<br>
+                                        You can change that as shown in below image.  
+                                        <img src="images/app/manage-badges-1.png" alt="Elite Quiz" />
+                                    </li> 
+
+                                    <li>
+                                        To unlock badges like Combat Winner, Clash Winner and Quiz Warrior winner must be declared by completing battle.<br>
+                                    </li> 
+
+                                    
+                                </ol>
+                                <hr> 
+                            </section>
 
                             <section id="howToAppConstants">
                                 <h4>How to change application constants</h4>
