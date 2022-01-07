@@ -95,6 +95,7 @@
                                 <li class="nav-item"><a class="nav-link" href="#howToConfigureForceUpdate">How to configure force update</a></li>         
                                 <li class="nav-item"><a class="nav-link" href="#manageBadges">Manage badges</a></li>         
                                 <li class="nav-item"><a class="nav-link" href="#howToSetupExamModule">How to set up exam module</a></li>         
+                                <li class="nav-item"><a class="nav-link" href="#howToSetupEarningModule">How to set up earning module</a></li>         
 
                                 <li class="nav-item"><a class="nav-link" href="#howToAppConstants">How to change application constants</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToGenerateReleaseApk">How to generate release apks</a></li>         
@@ -768,28 +769,6 @@
                                 <hr> 
                             </section>
 
-                            
-                            
-                            <section id="howToSetupExamModule">
-                                <h4>How to configure force update</h4>
-                                <ol>    
-                                    <li>
-                                        Go to admin panel in settings -> system configurations and enable exam module as shown in image.
-                                        <br>
-                                        <img src="images/app/exam-module-1.png" alt="Elite Quiz" />
-                                    </li> 
-
-                                    <li>
-                                        Go to lib/utils/constants.dart and update exam rules as per your need as shown in image.
-                                        <br>
-                                        <img src="images/app/exam-module-2.png" alt="Elite Quiz" />
-                                    </li> 
-                                    
-                                </ol>
-                                <hr> 
-                            </section>
-
-
                             <section id="manageBadges">
                                 <h4>Manage Badges</h4>
                                 <ol>    
@@ -819,6 +798,78 @@
                                 </ol>
                                 <hr> 
                             </section>
+
+
+                            
+                            
+                            <section id="howToSetupExamModule">
+                                <h4>How to setup exam module</h4>
+                                <ol>    
+                                    <li>
+                                        Go to admin panel in settings -> system configurations and enable exam module as shown in image.
+                                        <br>
+                                        <img src="images/app/exam-module-1.png" alt="Elite Quiz" />
+                                    </li> 
+
+                                    <li>
+                                        Go to lib/utils/constants.dart and update exam rules as per your need as shown in image.
+                                        <br>
+                                        <img src="images/app/exam-module-2.png" alt="Elite Quiz" />
+                                    </li> 
+                                    
+                                </ol>
+                                <hr> 
+                            </section>
+
+                            
+                            <section id="howToSetupEarningModule">
+                                <h4>How to setup earning module</h4>
+                                <ol>    
+                                    <li>
+                                        Go to admin panel in settings -> Payment settings and enable payment as shown in image.
+
+                                        <br>
+
+                                        Per coin will decide amount of coins that will convert in amount. For Example. per 100 coins x amount will give to user.
+
+                                        <br>
+                                        Per amount will decide on x amount of coins user will get entered amount. For Example. per x coins 1 amount will give to user.
+
+                                        <br>
+                                        Note - Consider amount as dollar or any currency. It refer as real money.
+
+                                          
+
+                                        <br>
+                                        <img src="images/app/earning-module-1.png" alt="Elite Quiz" />
+                                    </li> 
+
+                                    <li>
+                                        Go to lib/utils/constants.dart and update notes for payment request as per your need as shown in image.
+                                        <br>
+                                        <img src="images/app/earning-module-3.png" alt="Elite Quiz" />
+                                    </li> 
+
+                                    <li>
+                                        Go to lib/utils/constants.dart and add payment method as per your need.
+                                        <br>
+                                        <img src="images/app/earning-module-2.png" alt="Elite Quiz" />
+                                    </li> 
+
+                                    <li>
+                                        Go to lib/utils/uiUtils.dart and modify coins redeem related equaiton as per your need.
+                                        <br>
+                                        <img src="images/app/earning-module-4.png" alt="Elite Quiz" />
+                                    </li> 
+                                    
+                                </ol>
+                                <hr> 
+                            </section>
+
+
+
+
+
 
                             <section id="howToAppConstants">
                                 <h4>How to change application constants</h4>
