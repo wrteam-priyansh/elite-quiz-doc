@@ -72,9 +72,7 @@
                         <li class="nav-item"><a href="#quiz_app" class="nav-link">Elite Quiz App</a>
                             <ul class="nav flex-column">
                                 <li class="nav-item"><a class="nav-link" href="#howToSetupFlutter">How to setup flutter</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#upgradeFlutter">Upgrade flutter to 2.0</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToRunFlutterProject">How to run flutter project</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#howToRunFlutterInVSCode">How to run flutter in Vs code</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToChangePackageName">How to change package name</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToIntegrateFirebase">How to integrate firebase</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#howToEnableFirebaseAuth">How to enable firebase auth</a></li>
@@ -200,110 +198,64 @@
                             <section id="howToSetupFlutter">
                                 <h4 >How to setup Flutter</h4>
                                 <ol>
-                                    <li>Download Lastest Flutter SDK from below link.in that click on flutter_window_xxx.zip button.</li>
-                                    <li><a href="https://flutter.dev/docs/get-started/install/windows">Flutter sdk Here</a>
-                                        <img src="images/app/setup.jpg"/>	
-                                    </li> 
-                                    <li>Extract the zip file and copy flutter folder into your desired installation location for the
-                                        Flutter SDK (eg. C:\src\flutter; do not install Flutter in a directory like C:\Program Files\).
-                                    </li>                                  
-                                    <li>Inside Flutter folder find flutter_console.bat. Start it by double-clicking.
-                                        <img src="images/app/setup2.jpg" alt="Elite Quiz" />
-                                    </li>
-                                    <li>Now set your enviournment variable</li>
-                                    <li>From the Start search bar in , type ‘env’ and select Edit environment variables for your account
-                                        <img src="images/app/path.jpg" alt="Elite Quiz" />
-                                    </li>
-                                    <li>Under User variables check if there is an entry called Path:</li>
-                                    <li>Click on Edit.new Dialog open from it click on new and copy full path to flutter\bin as its value
-                                    </li>
-                                    <li>Now Restart your pc for changes to take effect
-                                        <img src="images/app/path2.jpg" alt="Elite Quiz" />
-                                    </li>
-                                    <li>Now check everything is ok or not</li>
-                                    <li>open cmd and do following shown in below picture
-                                        <img src="images/app/check.jpg" alt="Elite Quiz" />
-                                    </li>
-                                    <li>Now open Android Studio and create new flutter project then select your flutter sdk file to the
-                                        location where we have downloaded earlier and that's it
-                                        <img src="images/app/flutter.jpg" alt="Elite Quiz" />
-                                    </li>
+                                    Visit flutter official website : <a href="https://docs.flutter.dev/get-started/install">https://docs.flutter.dev/get-started/install</a>
+                                    
+                                     for full install guide.
+                                     <br>
+                                     <br>
+                                     If you prefer video tutorials, we recommend this playlist for the full installation process <br>
+                                     <a href="https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm">https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm</a>
                                 </ol>
                                 <hr> 
                             </section>
 
-                            <section id="upgradeFlutter">
-                                <h4>Upgrade to flutter 2.0</h4>
-                                <ol>
-                                    <li>for upgrade go to terminal in android studio and type flutter upgrade it will automatically pick latest version with stable channel</li>
-                                    <li>If you have updated flutter 2.x after upgrade run flutter doctor. and in flutter doctor if you see below error like licence status unknown.
-                                        <img src="images/app/upgrade1.jpg" alt="Elite Quiz" />
-                                    </li>
-                                    <li>then go to sdk manager from upar right corner then go to android sdk inside that sdk tools and then uncheck hide obsolute package then check android sdk command line tool latest then apply and then ok. it will download latest version  as shown in below fig.
-                                        <img src="images/app/upgrade2.jpg" alt="Elite Quiz" />
-                                    </li>
-                                    <li>now run flutter doctor again your error will be removed</li>
-                                </ol>					
-                                <hr> 
-                            </section>
+                           
 
                             <section id="howToRunFlutterProject">
-                                <h4>How to run flutter project</h4>
-                                <img src="images/app/open2.jpg" alt="Elite Quiz" />
+                                <h4>How to run this project</h4>
                                 <ol>
-                                    <li>Go to file > open > then choose your downloaded project location then your project will open.and if you see upper right part 'enable dart support' then click that and go to pubspec.yaml file and in uper right part click pub get or package get and then press run button.</li>
-                                    <li><b>If your are getting error then you can perform below hack</b>
-                                    <li>if in your system firewall is on, then you can temporary disable firewall and then try to run project</li>
-                                    <li>if your flutter channel is not stable then you need to change it to stable. you can check your flutter channel by terminal. </li>
-                                    <li>go to android studio in bottom line click on terminal, in terminal write flutter channel.as shown below.
-                                        <img src="images/app/ch1.jpg" alt="Elite Quiz" />
+                                    <li>
+                                        Unzip the downloaded code. After unzipping you will have Elite Quiz - Flutter Code zip folder.
+                                        <br> Unzip Elite Quiz - Flutter Code folder and open it in
+                                          Android Studio or Visual Studio Code.</li>
+                                    <li>
+                                        Open ide teminal and execute flutter pub get command.
                                     </li>
-                                    <li>if your are not in stable then write flutter channel stable</li>
-                                    <li>go to Tools > Flutter > Flutter Clen.</li>
-                                    <li>go to file > invalidate cache/ restart</li>
+                                    <li>
+                                        If you are running this app for ios then run these following commands in terminal.
+                                        <br>cd ios
+                                        <br> pod install
+                                        <br> cd ..
+                                    </li>
+                                    <li>
+                                        open terminal and execute flutter run
+                                    </li>
                                 </ol>					
                                 <hr> 
                             </section>
 
 
-                            <section  id="howToRunFlutterInVSCode">
-                                <h4>How to run flutter in Vs code</h4>
-                                <ol>
-                                    <li>Visual Studio Code is a lightweight but powerful source code editor(optinal)(for vscode, all above setup for Android Studio are required).</li>
-                                    <li>For Download VSCode <a href="https://code.visualstudio.com/Download" style='color:#2889B9' target="_blank">Click Here</a></li>
-                                    <li>Open vs code and go to terminal option and open terminal
-                                        <img src="images/app/vscode1.jpg" alt="Elite Quiz" />
-                                    </li>
-                                    <li>Inside Terminal For Run the Application perform this two command 1. flutter pub get (flutter packages get) 2. flutter run </li>
-                                </ol>
-                                <hr> 
-                            </section>
+                            
 
 
                             <section id="howToChangePackageName">
                                 <h4>How to change package name</h4>
                                 <ol>
-                                    <li>In the Android panel, click on the little gear icon.Uncheck/Deselect the Compact Empty Middle Packages option.
-                                        <img src="images/app/packagename_1.jpg" alt="Elite Quiz" />
+                                    <li>
+                                        Change package name for android app <br>
+                                        Execute this command in your terminal<br> flutter pub run change_app_package_name:main your_new_package_name
+                                        <img src="images/app/changePackageName.png" alt="Elite Quiz">
                                     </li>
-                                    <li>Your package directory will now be broken up in individual directories.
-                                        <img src="images/app/packagename_2.jpg" alt="Elite Quiz" />
+                                    <li>
+                                        Change package name for ios app <br>
+ 
+                                        Open ios folder of this project in xcode. Go Select Runner->Targets->General->Identity and enter new package name in Build Identifier.
+                                        <br>
+                                        <img src="images/app/changePackageName1.png" alt="Elite Quiz">
                                     </li>
-                                    <li>Individually select each directory you want to rename, and: Right-click it Select Refactor Click on Rename current In the Pop-up dialog.
-                                        <img src="images/app/packagename_3.jpg" alt="Elite Quiz" />
-                                    </li>
-                                    <li>Enter the new name and hit Refactor.Allow a minute to let Android Studio update all changes.
-                                        <img src="images/app/packagename_4.jpg" alt="Elite Quiz" />
-                                    </li>
-                                    <li>Now press ctrl + shift + R and replace old packagename with your new packagename
-                                        <img src="images/app/packagename_5.jpg" alt="Elite Quiz" />
-                                    </li>
-                                    <li>For ios open ios > Runner > info.plist > there is the key CFBundleIdentifier change the string value for that as shown in below
-                                        <img src="images/app/packagename_6.jpg" alt="Elite Quiz" /><br/>
-                                        <img src="images/app/packagename_7.jpg" alt="Elite Quiz" />
-                                    </li>                                   
-                                    <li>similar if you are using VSCode, for search press ctrl + F search old package name as given files in below image and replace with your package name. 
-                                        <img src="images/app/package_name1.jpg" alt="Elite Quiz" />
+                                    <li>
+                                        Go to lib/utils/constants.dart and update package.
+                                        <img src="images/app/changePackageName2.png" alt="Elite Quiz">
                                     </li>
                                 </ol>
                                 <hr> 
