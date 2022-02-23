@@ -320,6 +320,26 @@
                                         <img src="images/app/auth-2.png" alt="Elite Quiz" />
                                     </li>
 
+                                    <li> Please add support email as shown in below image. Go to project settings -> general -> public settings 
+
+                                         
+                                        <img src="images/app/auth-2.png" alt="Elite Quiz" />
+                                    </li>
+
+                                    <li>
+                                        If you are using phone auth in ios then follow these steps
+
+                                        <br>
+                                        Go to ios/Runner/GoogleService-Info.plist and copy REVERSED_CLIENT_ID 
+                                        <img src="images/app/addPhoneAuth.png" alt="Elite Quiz" />
+                                        <br>
+                                        Paste in ios/Runner/Info.plist as shown in below image
+                                        <img src="images/app/addPhoneAuth2.png" alt="Elite Quiz" />
+
+                                    </li>
+
+
+
 
                                     <li>If your are using facebook login go to https://developers.facebook.com/ and create project and get your application id and applicaiton secret from there.
                                         <img src="images/app/addFbAuth.jpg" alt="Elite Quiz" />
@@ -352,13 +372,14 @@
                                         Set up facebook auth for ios
 
                                         <br> <br>
-                                        Go to ios/Runner/Info.plist and add facebook app id as shown in image
-                                        <img src="images/app/addFbAuth5.png" alt="Elite Quiz" />
+                                        
+                                        Go to facebook developer, Add ios app and add your bundle id as shown in image
+                                        
+                                        <img src="images/app/addFbAuth4.png" alt="Elite Quiz" />
 
                                         <br> <br>
-
-                                        Go to facebook developer, Add ios app and add your bundle id as shown in image
-                                        <img src="images/app/addFbAuth4.png" alt="Elite Quiz" />
+                                        Go to ios/Runner/Info.plist and add facebook app id as shown in image
+                                        <img src="images/app/addFbAuth5.png" alt="Elite Quiz" />
                                     </li>
 
 
@@ -400,7 +421,7 @@
 
 
                             <section id="howToChangeAppVersion">
-                                <h4>How to change application version</h4>
+                                <h4>How to change application version and app launcher icon</h4>
                                 <ol>
                                     <li>
                                         go to pubspec.yaml EX.Update version:A.B.C+X in pubspec.yaml.
@@ -414,11 +435,11 @@
                             <section id="howToChangeAppLogo">
                                 <h4>How to change application logo</h4>
                                 <ol>
-                                    <li>For Android For Android, open android > app > src > main > res > mipmap add here your logo according to device screen size                
-                                        <img src="images/app/logo_1.jpg" alt="Elite Quiz" />  
+                                    <li>For Android For Android, open android > app > src > main > res and add here your logo according to device screen size                
+                                        <img src="images/app/androidAppIcon.png" alt="Elite Quiz" />  
                                     </li> 
-                                    <li>For IOS  open ios > Runner > Assets.xcassets > AppIcon.appiconset here you need to put your logo according to diffrent size.
-                                        <img src="images/app/logo_2.jpg" alt="Elite Quiz" />
+                                    <li>For IOS  open ios > Runner > Assets.xcassets > AppIcon.appiconset here and add your logo according to diffrent size.
+                                        <img src="images/app/iosAppIcon.png" alt="Elite Quiz" />
                                     </li> 
                                 </ol>
                                 <hr> 
